@@ -1,6 +1,22 @@
 $icons: (0:0)
-$icons: map-merge($icons,(codedby: (X: 0px, Y:-9px, W: 47px, H: 5px, TW: 49px, TH: 14px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(coderiver: (X: 0px, Y:0px, W: 49px, H: 5px, TW: 49px, TH: 14px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(calendar: (X: -88px, Y:-34px, W: 21px, H: 23px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(codedby: (X: -53px, Y:-98px, W: 47px, H: 5px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(coderiver: (X: 0px, Y:-98px, W: 49px, H: 5px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(compact-star-active: (X: 0px, Y:-23px, W: 79px, H: 18px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc-dislike: (X: 0px, Y:-107px, W: 14px, H: 16px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc-home: (X: 0px, Y:-64px, W: 30px, H: 30px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc-like: (X: -102px, Y:-64px, W: 14px, H: 16px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc-marker: (X: -122px, Y:-51px, W: 16px, H: 16px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc-place: (X: -146px, Y:0px, W: 13px, H: 17px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc-ppls: (X: -88px, Y:0px, W: 30px, H: 30px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc-schedule: (X: -122px, Y:-71px, W: 15px, H: 17px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc-wifi: (X: -68px, Y:-64px, W: 30px, H: 30px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc-years: (X: -34px, Y:-64px, W: 30px, H: 30px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(stars-active: (X: 0px, Y:0px, W: 84px, H: 19px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(teaser-stars: (X: 0px, Y:-45px, W: 64px, H: 15px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(underground-blue: (X: -122px, Y:0px, W: 20px, H: 13px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(underground-green: (X: -122px, Y:-17px, W: 20px, H: 13px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(underground-red: (X: -122px, Y:-34px, W: 20px, H: 13px, TW: 159px, TH: 123px, IMG: '../img/icons.png')))
 
 
 // Gets an attribute from the sass map
@@ -37,15 +53,111 @@ $icons: map-merge($icons,(coderiver: (X: 0px, Y:0px, W: 49px, H: 5px, TW: 49px, 
 	+sprite-retina($i)	
 
 //
+//.icon-calendar
+//	width: 21px
+//	height: 23px
+//	background-image: url('../img/icons.png')
+//	background-position: -88px -34px
+//
 //.icon-codedby
 //	width: 47px
 //	height: 5px
 //	background-image: url('../img/icons.png')
-//	background-position: 0px -9px
+//	background-position: -53px -98px
 //
 //.icon-coderiver
 //	width: 49px
 //	height: 5px
 //	background-image: url('../img/icons.png')
+//	background-position: 0px -98px
+//
+//.icon-compact-star-active
+//	width: 79px
+//	height: 18px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px -23px
+//
+//.icon-doc-dislike
+//	width: 14px
+//	height: 16px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px -107px
+//
+//.icon-doc-home
+//	width: 30px
+//	height: 30px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px -64px
+//
+//.icon-doc-like
+//	width: 14px
+//	height: 16px
+//	background-image: url('../img/icons.png')
+//	background-position: -102px -64px
+//
+//.icon-doc-marker
+//	width: 16px
+//	height: 16px
+//	background-image: url('../img/icons.png')
+//	background-position: -122px -51px
+//
+//.icon-doc-place
+//	width: 13px
+//	height: 17px
+//	background-image: url('../img/icons.png')
+//	background-position: -146px 0px
+//
+//.icon-doc-ppls
+//	width: 30px
+//	height: 30px
+//	background-image: url('../img/icons.png')
+//	background-position: -88px 0px
+//
+//.icon-doc-schedule
+//	width: 15px
+//	height: 17px
+//	background-image: url('../img/icons.png')
+//	background-position: -122px -71px
+//
+//.icon-doc-wifi
+//	width: 30px
+//	height: 30px
+//	background-image: url('../img/icons.png')
+//	background-position: -68px -64px
+//
+//.icon-doc-years
+//	width: 30px
+//	height: 30px
+//	background-image: url('../img/icons.png')
+//	background-position: -34px -64px
+//
+//.icon-stars-active
+//	width: 84px
+//	height: 19px
+//	background-image: url('../img/icons.png')
 //	background-position: 0px 0px
+//
+//.icon-teaser-stars
+//	width: 64px
+//	height: 15px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px -45px
+//
+//.icon-underground-blue
+//	width: 20px
+//	height: 13px
+//	background-image: url('../img/icons.png')
+//	background-position: -122px 0px
+//
+//.icon-underground-green
+//	width: 20px
+//	height: 13px
+//	background-image: url('../img/icons.png')
+//	background-position: -122px -17px
+//
+//.icon-underground-red
+//	width: 20px
+//	height: 13px
+//	background-image: url('../img/icons.png')
+//	background-position: -122px -34px
 //
