@@ -1,0 +1,130 @@
+extends _layout
+
+block title
+	title Title of template
+
+block content
+	.doc-widgets
+		.doc-widgets__row
+			.doc-widgets__left
+				.doc-widgets__search-title Без города  (существующий размер)
+				.doc-search
+					.doc-search__logo
+						img(src="img/search-logo.png", alt="")
+					.doc-search__form
+						form
+							.doc-search__ppls
+								.doc-search__icon.doc-search__icon-ppls
+								input(type="text" placeholder="Выберите специальность врача", title="Выберите специальность врача").doc-search__input
+							.doc-search__place
+								.doc-search__icon.doc-search__icon-place
+								input(type="text" placeholder="Выберите район или метро", title="Выберите район или метро").doc-search__input
+							.doc-search__btn
+								button.doc-search__button Найти врача
+			.doc-widgets__right
+				.doc-widgets__search-title Без города (600px)
+				.doc-search.doc-search_small
+					.doc-search__logo
+						img(src="img/search-logo.png", alt="")
+					.doc-search__form
+						form
+							.doc-search__ppls
+								.doc-search__icon.doc-search__icon-ppls
+								input(type="text" placeholder="Cпециальность врача", title="Cпециальность врача").doc-search__input
+							.doc-search__place
+								.doc-search__icon.doc-search__icon-place
+								input(type="text" placeholder="Район или метро", title="Район или метро").doc-search__input
+							.doc-search__btn
+								button.doc-search__button Найти
+		.doc-widgets__row
+			.doc-widgets__left
+				.doc-widgets__search-title С городом (существующий размер)
+				.doc-search
+					.doc-search__logo
+						img(src="img/search-logo.png", alt="")
+						.doc-search__city
+							.doc-search__city-label выберите город
+							.doc-search__select
+								.doc-search__select-text#js-select-text1 г. Киев
+								select.doc-search__select-select#js-select-list1(onchange="myFunction1()")
+									option(value="г. Киев") г. Киев
+									option(value="г. Одесса") г. Одесса
+									option(value="г. Киев") г. Киев
+									option(value="г. Одесса") г. Одесса
+								script(type='text/javascript').
+									function myFunction1() {
+										var selectVal = document.getElementById('js-select-list1').value;
+										var selectText = document.getElementById('js-select-text1');
+										selectText.innerHTML = selectVal
+									}
+					.doc-search__form
+						form
+							.doc-search__ppls
+								.doc-search__icon.doc-search__icon-ppls
+								input(type="text" placeholder="Выберите специальность врача", title="Выберите специальность врача").doc-search__input
+							.doc-search__place
+								.doc-search__icon.doc-search__icon-place
+								input(type="text" placeholder="Выберите район или метро", title="Выберите район или метро").doc-search__input
+							.doc-search__btn
+								button.doc-search__button Найти врача
+			.doc-widgets__right
+				.doc-widgets__search-title С городом (600px)
+				.doc-search.doc-search_small
+					.doc-search__logo
+						img(src="img/search-logo.png", alt="")
+						.doc-search__city
+							.doc-search__city-label выберите город
+							.doc-search__select
+								.doc-search__select-text#js-select-text2 г. Киев
+								select.doc-search__select-select#js-select-list2(onchange="myFunction2()")
+									option(value="г. Киев") г. Киев
+									option(value="г. Одесса") г. Одесса
+									option(value="г. Киев") г. Киев
+									option(value="г. Одесса") г. Одесса
+								script(type='text/javascript').
+									function myFunction2() {
+										var selectVal = document.getElementById('js-select-list2').value;
+										var selectText = document.getElementById('js-select-text2');
+										selectText.innerHTML = selectVal
+									}
+					.doc-search__form
+						form
+							.doc-search__ppls
+								.doc-search__icon.doc-search__icon-ppls
+								input(type="text" placeholder="Cпециальность врача", title="Cпециальность врача").doc-search__input
+							.doc-search__place
+								.doc-search__icon.doc-search__icon-place
+								input(type="text" placeholder="Район или метро", title="Район или метро").doc-search__input
+							.doc-search__btn
+								button.doc-search__button Найти
+		.doc-widgets__row
+			.doc-widgets__full
+				.doc-widgets__search-title 960px
+				.doc-search.doc-search_large
+					.doc-search__logo
+						img(src="img/search-logo.png", alt="")
+						.doc-search__city
+							.doc-search__city-label выберите город
+							.doc-search__select
+								.doc-search__select-text#js-select-text г. Киев
+								select.doc-search__select-select#js-select-list(onchange="myFunction()")
+									option(value="г. Киев") г. Киев
+									option(value="г. Одесса") г. Одесса
+									option(value="г. Киев") г. Киев
+									option(value="г. Одесса") г. Одесса
+								script(type='text/javascript').
+									function myFunction() {
+										var selectVal = document.getElementById('js-select-list').value;
+										var selectText = document.getElementById('js-select-text');
+										selectText.innerHTML = selectVal
+									}									
+					.doc-search__form
+						form
+							.doc-search__ppls
+								.doc-search__icon.doc-search__icon-ppls
+								input(type="text" placeholder="Выберите специальность врача", title="Выберите специальность врача").doc-search__input
+							.doc-search__place
+								.doc-search__icon.doc-search__icon-place
+								input(type="text" placeholder="Выберите район или метро", title="Выберите район или метро").doc-search__input
+							.doc-search__btn
+								button.doc-search__button Найти врача

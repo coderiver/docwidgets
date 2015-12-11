@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title of template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <div class="doc-widgets">
+        <div class="doc-widgets__row">
+          <div class="doc-widgets__left">
+            <div class="doc-widgets__search-title">Без города  (существующий размер)</div>
+            <div class="doc-search">
+              <div class="doc-search__logo"><img src="img/search-logo.png" alt=""></div>
+              <div class="doc-search__form">
+                <form>
+                  <div class="doc-search__ppls">
+                    <div class="doc-search__icon doc-search__icon-ppls"></div>
+                    <input type="text" placeholder="Выберите специальность врача" title="Выберите специальность врача" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__place">
+                    <div class="doc-search__icon doc-search__icon-place"></div>
+                    <input type="text" placeholder="Выберите район или метро" title="Выберите район или метро" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__btn">
+                    <button class="doc-search__button">Найти врача</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="doc-widgets__right">
+            <div class="doc-widgets__search-title">Без города (600px)</div>
+            <div class="doc-search doc-search_small">
+              <div class="doc-search__logo"><img src="img/search-logo.png" alt=""></div>
+              <div class="doc-search__form">
+                <form>
+                  <div class="doc-search__ppls">
+                    <div class="doc-search__icon doc-search__icon-ppls"></div>
+                    <input type="text" placeholder="Cпециальность врача" title="Cпециальность врача" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__place">
+                    <div class="doc-search__icon doc-search__icon-place"></div>
+                    <input type="text" placeholder="Район или метро" title="Район или метро" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__btn">
+                    <button class="doc-search__button">Найти</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doc-widgets__row">
+          <div class="doc-widgets__left">
+            <div class="doc-widgets__search-title">С городом (существующий размер)</div>
+            <div class="doc-search">
+              <div class="doc-search__logo"><img src="img/search-logo.png" alt="">
+                <div class="doc-search__city">
+                  <div class="doc-search__city-label">выберите город</div>
+                  <div class="doc-search__select">
+                    <div id="js-select-text1" class="doc-search__select-text">г. Киев</div>
+                    <select id="js-select-list1" onchange="myFunction1()" class="doc-search__select-select">
+                      <option value="г. Киев">г. Киев</option>
+                      <option value="г. Одесса">г. Одесса</option>
+                      <option value="г. Киев">г. Киев</option>
+                      <option value="г. Одесса">г. Одесса</option>
+                    </select>
+                    <script type="text/javascript">
+                      function myFunction1() {
+                      	var selectVal = document.getElementById('js-select-list1').value;
+                      	var selectText = document.getElementById('js-select-text1');
+                      	selectText.innerHTML = selectVal
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-search__form">
+                <form>
+                  <div class="doc-search__ppls">
+                    <div class="doc-search__icon doc-search__icon-ppls"></div>
+                    <input type="text" placeholder="Выберите специальность врача" title="Выберите специальность врача" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__place">
+                    <div class="doc-search__icon doc-search__icon-place"></div>
+                    <input type="text" placeholder="Выберите район или метро" title="Выберите район или метро" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__btn">
+                    <button class="doc-search__button">Найти врача</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="doc-widgets__right">
+            <div class="doc-widgets__search-title">С городом (600px)</div>
+            <div class="doc-search doc-search_small">
+              <div class="doc-search__logo"><img src="img/search-logo.png" alt="">
+                <div class="doc-search__city">
+                  <div class="doc-search__city-label">выберите город</div>
+                  <div class="doc-search__select">
+                    <div id="js-select-text2" class="doc-search__select-text">г. Киев</div>
+                    <select id="js-select-list2" onchange="myFunction2()" class="doc-search__select-select">
+                      <option value="г. Киев">г. Киев</option>
+                      <option value="г. Одесса">г. Одесса</option>
+                      <option value="г. Киев">г. Киев</option>
+                      <option value="г. Одесса">г. Одесса</option>
+                    </select>
+                    <script type="text/javascript">
+                      function myFunction2() {
+                      	var selectVal = document.getElementById('js-select-list2').value;
+                      	var selectText = document.getElementById('js-select-text2');
+                      	selectText.innerHTML = selectVal
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-search__form">
+                <form>
+                  <div class="doc-search__ppls">
+                    <div class="doc-search__icon doc-search__icon-ppls"></div>
+                    <input type="text" placeholder="Cпециальность врача" title="Cпециальность врача" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__place">
+                    <div class="doc-search__icon doc-search__icon-place"></div>
+                    <input type="text" placeholder="Район или метро" title="Район или метро" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__btn">
+                    <button class="doc-search__button">Найти</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doc-widgets__row">
+          <div class="doc-widgets__full">
+            <div class="doc-widgets__search-title">960px</div>
+            <div class="doc-search doc-search_large">
+              <div class="doc-search__logo"><img src="img/search-logo.png" alt="">
+                <div class="doc-search__city">
+                  <div class="doc-search__city-label">выберите город</div>
+                  <div class="doc-search__select">
+                    <div id="js-select-text" class="doc-search__select-text">г. Киев</div>
+                    <select id="js-select-list" onchange="myFunction()" class="doc-search__select-select">
+                      <option value="г. Киев">г. Киев</option>
+                      <option value="г. Одесса">г. Одесса</option>
+                      <option value="г. Киев">г. Киев</option>
+                      <option value="г. Одесса">г. Одесса</option>
+                    </select>
+                    <script type="text/javascript">
+                      function myFunction() {
+                      	var selectVal = document.getElementById('js-select-list').value;
+                      	var selectText = document.getElementById('js-select-text');
+                      	selectText.innerHTML = selectVal
+                      }									
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-search__form">
+                <form>
+                  <div class="doc-search__ppls">
+                    <div class="doc-search__icon doc-search__icon-ppls"></div>
+                    <input type="text" placeholder="Выберите специальность врача" title="Выберите специальность врача" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__place">
+                    <div class="doc-search__icon doc-search__icon-place"></div>
+                    <input type="text" placeholder="Выберите район или метро" title="Выберите район или метро" class="doc-search__input">
+                  </div>
+                  <div class="doc-search__btn">
+                    <button class="doc-search__button">Найти врача</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END out-->
+  </body>
+</html>

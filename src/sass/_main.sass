@@ -3,7 +3,7 @@
 	&__row
 		padding: 11px
 		+clr
-	&__left, &__right
+	&__left, &__right, &__full
 		padding: 22px 
 		float: left
 		width: 100%
@@ -11,12 +11,14 @@
 		max-width: 892px
 	&__right
 		max-width: 646px
-	&__title
+	&__title, &__search-title
 		opacity: 0.45
 		color: #00829b
 		font-size: 20px
 		font-style: italic
 		margin-bottom: 10px
+	&__search-title
+		margin-bottom: 30px
 	&__compact
 		padding: 0 0 35px 
 	&__compacts
@@ -32,6 +34,10 @@
 	box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15) 
 	border-radius: 3px
 	overflow: hidden
+	*
+		margin: 0
+		padding: 0
+		box-sizing: border-box
 	.doc-widget
 		border: none
 		box-shadow: none
@@ -54,6 +60,7 @@
 	*
 		margin: 0
 		padding: 0
+		box-sizing: border-box
 	&.doc-widget_normal
 		.doc-widget
 			&__img
@@ -370,6 +377,10 @@
 	overflow: hidden
 	background: #fff 
 	width: 242px
+	*
+		margin: 0
+		padding: 0
+		box-sizing: border-box
 	.doc-compact
 		border: none
 		box-shadow: none
@@ -387,6 +398,10 @@
 	background: #fff 
 	+clr
 	width: 242px
+	*
+		margin: 0
+		padding: 0
+		box-sizing: border-box
 	&.doc-compact_large
 		width: 325px
 		.doc-compact
@@ -579,6 +594,10 @@
 	+clr
 	padding: 15px 
 	width: 602px
+	*
+		margin: 0
+		padding: 0
+		box-sizing: border-box
 	&.doc-teaser_small
 		width: 302px
 		.doc-teaser
@@ -715,3 +734,148 @@
 				background: darken(#35bfae, 10%) 
 			&:active
 				background: darken(#35bfae, 20%) 
+
+.doc-search
+	background-color: #00859d
+	border-radius: 3px
+	width: 100%
+	max-width: 846px
+	min-width: 603px
+	position: relative
+	margin: 16px 0 0
+	*
+		margin: 0
+		padding: 0
+		box-sizing: border-box
+	&.doc-search_small
+		max-width: 603px
+		.doc-search
+			&__btn
+				width: 118px
+			&__form
+				form
+					padding-right: 128px
+	&.doc-search_large
+		max-width: 963px
+	&__logo
+		position: absolute
+		top: -16px
+		left: 0
+		height: 34px
+		padding: 11px 3px 0 19px 
+		border-radius: 3px
+		background-color: #00859d
+		+clr
+		white-space: nowrap
+		font-size: 0
+		z-index: 2
+		&:before
+			content: "" 
+			position: absolute
+			top: 2px
+			left: 100%
+			+arr(10, 15, #00859d, bl)
+		img
+			display: inline-block
+			vertical-align: top
+	&__city
+		display: inline-block
+		vertical-align: top
+		color: white
+		line-height: 14px
+		font-size: 0
+		margin-top: -2px
+		padding: 0 0 0 10px 
+		&-label
+			display: inline-block
+			vertical-align: top
+			font-size: 13px
+			opacity: 0.66
+			padding: 1px 10px 0 0 
+	&__select
+		display: inline-block
+		vertical-align: top
+		font-size: 14px
+		position: relative
+		padding-right: 18px
+		&-text
+			border-bottom: 1px dotted #fff
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				right: -15px 
+				+arr(8, 5, #fff, b)
+				margin-top: -2px
+		&-select
+			position: absolute
+			top: 0
+			left: 0
+			opacity: 0
+			right: 0
+			width: 100%
+			cursor: pointer
+			+reg
+			font-size: 14px
+			line-height: 15px
+	&__form
+		form
+			+clr
+			position: relative
+			padding: 10px 180px 10px 10px
+	&__ppls, &__place, &__btn
+		padding: 9px
+		float: left
+	&__ppls, &__place
+		position: relative
+	&__ppls
+		width: 51%
+	&__place
+		width: 49%
+	&__btn
+		position: absolute
+		top: 10px
+		right: 10px
+		width: 172px
+	&__input
+		width: 100%
+		+reg
+		color: #91b5bc
+		font-size: 16px
+		background: white
+		border-radius: 3px
+		height: 39px
+		padding: 9px 50px 10px 16px
+		-ms-text-overflow: ellipsis
+		text-overflow: ellipsis
+		+placeholder
+			color: #91b5bc
+			-ms-text-overflow: ellipsis
+			text-overflow: ellipsis
+	&__button
+		background: #ffc02a
+		border-radius: 3px
+		text-shadow: 0 1px 1px rgba(180, 137, 63, 0.75)
+		color: white
+		font-size: 20px
+		font-weight: 700
+		line-height: 1
+		width: 100%
+		padding: 9px 10px 10px 
+		cursor: pointer
+		transition: background 0.2s
+		&:hover
+			background: darken(#ffc02a, 10%) 
+		&:active
+			background: darken(#ffc02a, 20%) 
+	&__icon
+		position: absolute
+		top: 50%
+		margin-top: -14px
+		&-ppls
+			right: 23px
+			+s(search-ppls)
+		&-place
+			right: 26px
+			+s(search-place)
