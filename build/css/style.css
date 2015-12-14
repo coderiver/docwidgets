@@ -105,6 +105,9 @@ body { font-family: "PT Sans", Arial, sans-serif; font-size: 12px; line-height: 
 .doc-widget .doc-widget__title-link { color: #4b89d3; font-size: 24px; font-weight: 700; line-height: 1; display: inline-block; vertical-align: top; text-decoration: none; }
 .doc-widget .doc-widget__title-link:hover { text-decoration: underline; }
 .doc-widget .doc-widget__tags { color: #5e6e71; font-size: 14px; line-height: 1.2; padding: 0 60px 0 0; height: 48px; overflow: hidden; margin-bottom: 18px; }
+.doc-widget .doc-widget__tags_mod { margin-bottom: 9px; }
+.doc-widget .doc-widget__tags strong, .doc-widget .doc-widget__tags span { font-size: 16px; display: block; }
+.doc-widget .doc-widget__tags strong { font-weight: 700; margin-bottom: 4px; }
 .doc-widget .doc-widget__info { font-size: 0; padding: 0 0 5px; }
 .doc-widget .doc-widget__info-box { width: 98px; padding: 0 0 0 36px; position: relative; display: inline-block; vertical-align: top; min-height: 30px; margin-bottom: 10px; }
 .doc-widget .doc-widget__info-icon { position: absolute; top: 0; left: 0; }
@@ -133,6 +136,10 @@ body { font-family: "PT Sans", Arial, sans-serif; font-size: 12px; line-height: 
 .doc-widget .doc-widget__button { text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.23); color: white; font-size: 18px; font-weight: 700; line-height: 1; background: #35bfae; -webkit-border-radius: 3px; border-radius: 3px; padding: 13px 22px 14px 25px; display: inline-block; vertical-align: top; cursor: pointer; outline: none; -webkit-transition: background 0.2s; transition: background 0.2s; text-align: center; text-decoration: none; }
 .doc-widget .doc-widget__button:hover { background: #2a978a; }
 .doc-widget .doc-widget__button:active { background: #1f6f65; }
+.doc-widget .doc-widget__box-title { font-size: 16px; line-height: 1.2; color: #5e6e71; }
+.doc-widget .doc-widget__box-title a { color: #4b89d3; text-decoration: none; }
+.doc-widget .doc-widget__box-title a:hover { text-decoration: underline; }
+.doc-widget .doc-widget__box-title strong, .doc-widget .doc-widget__box-title a { font-weight: 700; }
 
 .doc-compact-list { position: relative; border: 1px solid #35bfae; -webkit-box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15); box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15); -webkit-border-radius: 3px; border-radius: 3px; overflow: hidden; background: #fff; width: 242px; }
 .doc-compact-list * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }

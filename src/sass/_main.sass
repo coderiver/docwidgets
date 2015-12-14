@@ -266,6 +266,14 @@
 			height: 48px 
 			overflow: hidden
 			margin-bottom: 18px
+			&_mod
+				margin-bottom: 9px
+			strong, span
+				font-size: 16px
+				display: block
+			strong
+				font-weight: 700
+				margin-bottom: 4px
 		&__info
 			font-size: 0
 			padding: 0 0 5px 
@@ -368,7 +376,18 @@
 				background: darken(#35bfae, 10%) 
 			&:active
 				background: darken(#35bfae, 20%) 
-
+		&__box
+			&-title
+				font-size: 16px
+				line-height: 1.2
+				color: #5e6e71
+				a
+					color: #4b89d3
+					text-decoration: none
+					&:hover
+						text-decoration: underline
+				strong, a
+					font-weight: 700
 .doc-compact-list
 	position: relative
 	border: 1px solid #35bfae
