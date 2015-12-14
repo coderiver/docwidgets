@@ -69,6 +69,16 @@
 				margin-bottom: 18px
 			&__schedule
 				padding: 9px 12px 8px 
+	&.doc-widget_normal-doc
+		max-width: 602px
+		.doc-widget
+			&__box
+				&-title
+					font-size: 14px
+			&__tags
+				height: auto
+				span, strong
+					font-size: 14px
 	&.doc-widget_small
 		.doc-widget
 			&__left
@@ -138,6 +148,31 @@
 					color: #96b8bf
 				&-time
 					color: #5e6e71
+	&.doc-widget_small-doc
+		.doc-widget
+			&__left
+				width: 75px
+				padding: 0
+			&__photo
+				margin: 0
+			&__right
+				padding-left: 89px
+				padding-right: 315px
+			&__tags
+				height: auto
+				margin-bottom: 14px
+				span, strong
+					font-size: 13px
+			&__title, &__tags
+				padding-right: 0
+			&__title
+				margin: 0
+				padding-bottom: 14px
+				&-link
+					font-size: 18px
+					text-decoration: underline
+					&:hover
+						text-decoration: none						
 	.doc-widget
 		&__logo
 			position: absolute
@@ -160,6 +195,15 @@
 			float: left
 		&__right
 			padding: 0 0 0 162px 
+			&-mod
+				padding-bottom: 21px
+			&-info
+				float: right
+				width: 315px
+				.doc-widget__button
+					font-size: 17px
+					border-radius: 4px
+					padding: 10px 22px 11px
 		&__img
 			width: 139px
 			height: 108px
@@ -196,6 +240,8 @@
 			text-align: center
 			font-size: 0
 			margin-bottom: 25px
+			&-mod
+				margin-bottom: 20px
 			&-link, &-icon
 				display: inline-block
 				vertical-align: middle
@@ -302,6 +348,20 @@
 				font-size: 12px
 				line-height: 1
 				padding: 3px 0 
+			&-rating
+				font-size: 0
+				text-align: left
+				margin-bottom: 34px
+				.doc-widget
+					&__rating, &__review
+						display: inline-block
+						vertical-align: middle
+					&__review
+						margin: 0
+						&-link
+							font-size: 14px
+					&__rating
+						margin-right: 10px
 		&__address
 			font-size: 0
 			padding: 7px 0 
@@ -356,6 +416,8 @@
 			text-align: right
 			font-size: 0
 			padding: 8px 0 0 
+			&-mod
+				padding: 6px 0 0
 		&__button
 			text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.23)
 			color: white
@@ -377,10 +439,19 @@
 			&:active
 				background: darken(#35bfae, 20%) 
 		&__box
+			padding: 11px 16px 7px
+			background-color: white
+			border: 1px dashed #c0d2d6
+			border-radius: 3px
+			&-wrapper
+				padding: 6px 0 15px
 			&-title
 				font-size: 16px
 				line-height: 1.2
 				color: #5e6e71
+				margin-bottom: 7px
+				&-mod
+					margin: 0
 				a
 					color: #4b89d3
 					text-decoration: none
@@ -388,6 +459,27 @@
 						text-decoration: underline
 				strong, a
 					font-weight: 700
+			&-text
+				font-size: 12px
+				color: #99a3a5
+				line-height: 1.2
+			.doc-widget
+				&__address
+					&-box
+						padding-right: 17px
+		&__photo
+			display: block
+			font-size: 0
+			margin-bottom: 17px
+			img
+				border-radius: 3px
+				display: block
+				width: 100%
+		&__price
+			font-size: 16px
+			color: #5e6e71
+			strong
+				font-weight: 700
 .doc-compact-list
 	position: relative
 	border: 1px solid #35bfae
@@ -476,9 +568,25 @@
 				max-height: 100%
 				display: inline-block
 				vertical-align: middle
+		&__photo
+			width: 73px
+			background-color: white
+			+vertical
+			display: block
+			img
+				max-width: 100%
+				max-height: 100%
+				display: inline-block
+				vertical-align: middle
+				border-radius: 3px
 		&__review
 			text-align: center
 			font-size: 0
+			float: left
+			width: 100%
+			text-align: left
+			&-mod
+				padding: 4px 0 0 0
 			&-link
 				display: inline-block
 				vertical-align: top
@@ -508,6 +616,8 @@
 			font-size: 12px
 			line-height: 1.2
 			margin-bottom: 5px
+			&-mod
+				font-size: 14px
 		&__link
 			color: #4b89d3
 			display: block
@@ -665,6 +775,18 @@
 				max-height: 100%
 				display: inline-block
 				vertical-align: middle
+		&__photo
+			width: 53px
+			height: 53px
+			+vertical
+			display: block
+			float: left
+			img
+				max-width: 100%
+				max-height: 100%
+				display: inline-block
+				vertical-align: middle
+				border-radius: 3px
 		&__main
 			padding-left: 68px
 			padding-right: 271px
@@ -692,6 +814,9 @@
 			text-overflow: ellipsis
 			white-space: nowrap
 			margin-bottom: 6px
+			&-mod
+				font-size: 14px
+				margin-bottom: 4px
 		&__info
 			font-size: 0
 			margin-bottom: -1px
