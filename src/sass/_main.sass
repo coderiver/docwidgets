@@ -158,8 +158,10 @@
 			&__photo
 				margin: 0
 			&__right
-				padding-left: 89px
-				padding-right: 315px
+				// padding-left: 89px
+				// padding-right: 315px
+				padding: 0 14px
+				overflow: hidden
 			&__tags
 				height: auto
 				margin-bottom: 12px
@@ -183,14 +185,32 @@
 			background: #35bfae
 			padding: 13px 7px 10px 1px
 			font-size: 0
-			img
-				display: block
+			height: 48px
 			&:before
 				content: ""
 				position: absolute
 				top: 0
 				right: 100%
 				+arr(38, 48, #35bfae, tr)
+			.icon-logo
+				font-size: 24px
+				color: #fff
+				font-weight: normal 
+				text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.35) 
+			&-mod
+				padding: 6px 0 6px 8px
+				left: 0
+				right: auto
+				width: 45px
+				height: 24px
+				&:before
+					right: auto
+					left: 100%
+					+arr(19, 24, #35bfae, tl)
+				.icon-logo
+					font-size: 12px
+			img
+				display: block
 		&__left
 			width: 162px
 			padding: 0 23px 0 0 
@@ -201,7 +221,6 @@
 				padding-bottom: 21px
 			&-info
 				float: right
-				width: 315px
 				.doc-widget__button
 					font-size: 17px
 					border-radius: 4px
@@ -554,6 +573,11 @@
 				+arr(23, 30, #35bfae, tl)
 			img
 				width: 51px
+			.icon-logo
+				font-size: 15px
+				color: #fff
+				font-weight: normal 
+				text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.35) 
 		&__main
 			padding: 18px
 			+clr
@@ -769,6 +793,11 @@
 			img
 				width: 41px
 				height: 12px
+			.icon-logo
+				font-size: 12px
+				color: #fff
+				font-weight: normal 
+				text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.35) 
 		&__img
 			width: 56px
 			height: 53px
@@ -910,132 +939,138 @@
 					padding-right: 128px
 	&.doc-search_large
 		max-width: 963px
-	&__logo
-		position: absolute
-		top: -16px
-		left: 0
-		height: 34px
-		padding: 11px 3px 0 19px 
-		border-radius: 3px 0 3px 3px
-		background-color: #00859d
-		+clr
-		white-space: nowrap
-		font-size: 0
-		z-index: 2
-		&:before
-			content: "" 
+	.doc-search
+		&__logo
 			position: absolute
-			// top: 2px
-			left: 100%
-			margin-left: -2px
-			// +arr(10, 15, #00859d, bl)
-			+s(corner)
-			top: 0
-		img
-			display: inline-block
-			vertical-align: top
-	&__city
-		display: inline-block
-		vertical-align: top
-		color: white
-		line-height: 14px
-		font-size: 0
-		margin-top: -2px
-		padding: 0 0 0 10px 
-		&-label
-			display: inline-block
-			vertical-align: top
-			font-size: 13px
-			opacity: 0.66
-			padding: 1px 10px 0 0 
-	&__select
-		display: inline-block
-		vertical-align: top
-		font-size: 14px
-		position: relative
-		padding-right: 18px
-		&-text
-			border-bottom: 1px dotted #fff
-			position: relative
-			&:before
-				content: ""
-				position: absolute
-				top: 50%
-				right: -15px 
-				+arr(8, 5, #fff, b)
-				margin-top: -2px
-		&-select
-			position: absolute
-			top: 0
+			top: -16px
 			left: 0
-			opacity: 0
-			right: 0
-			width: 100%
-			cursor: pointer
-			+reg
-			font-size: 14px
-			line-height: 15px
-	&__form
-		form
+			height: 34px
+			padding: 11px 3px 0 19px 
+			border-radius: 3px 0 3px 3px
+			background-color: #00859d
 			+clr
+			white-space: nowrap
+			font-size: 0
+			z-index: 2
+			&:before
+				content: "" 
+				position: absolute
+				// top: 2px
+				left: 100%
+				margin-left: -2px
+				// +arr(10, 15, #00859d, bl)
+				+s(corner)
+				top: 0
+			img
+				display: inline-block
+				vertical-align: top
+			.icon-logo
+				font-size: 13px
+				color: #fff
+				font-weight: normal 
+				text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.35) 
+		&__city
+			display: inline-block
+			vertical-align: top
+			color: white
+			line-height: 14px
+			font-size: 0
+			margin-top: -2px
+			padding: 0 0 0 10px 
+			&-label
+				display: inline-block
+				vertical-align: top
+				font-size: 13px
+				opacity: 0.66
+				padding: 1px 10px 0 0 
+		&__select
+			display: inline-block
+			vertical-align: top
+			font-size: 14px
 			position: relative
-			padding: 10px 182px 10px 10px
-	&__ppls, &__place, &__btn
-		padding: 9px
-		float: left
-	&__ppls, &__place
-		position: relative
-	&__ppls
-		width: 51%
-	&__place
-		width: 49%
-	&__btn
-		position: absolute
-		top: 10px
-		right: 10px
-		width: 172px
-	&__input
-		width: 100%
-		+reg
-		color: #91b5bc
-		font-size: 16px
-		background: white
-		border-radius: 3px
-		height: 39px
-		padding: 9px 0 10px 16px
-		-ms-text-overflow: ellipsis
-		text-overflow: ellipsis
-		+placeholder
+			padding-right: 18px
+			&-text
+				border-bottom: 1px dotted #fff
+				position: relative
+				&:before
+					content: ""
+					position: absolute
+					top: 50%
+					right: -15px 
+					+arr(8, 5, #fff, b)
+					margin-top: -2px
+			&-select
+				position: absolute
+				top: 0
+				left: 0
+				opacity: 0
+				right: 0
+				width: 100%
+				cursor: pointer
+				+reg
+				font-size: 14px
+				line-height: 15px
+		&__form
+			form
+				+clr
+				position: relative
+				padding: 10px 182px 10px 10px
+		&__ppls, &__place, &__btn
+			padding: 9px
+			float: left
+		&__ppls, &__place
+			position: relative
+		&__ppls
+			width: 51%
+		&__place
+			width: 49%
+		&__btn
+			position: absolute
+			top: 10px
+			right: 10px
+			width: 172px
+		&__input
+			width: 100%
+			+reg
 			color: #91b5bc
+			font-size: 16px
+			background: white
+			border-radius: 3px
+			height: 39px
+			padding: 9px 0 10px 16px
 			-ms-text-overflow: ellipsis
 			text-overflow: ellipsis
-		&-wrapper
-			background: #fff
+			+placeholder
+				color: #91b5bc
+				-ms-text-overflow: ellipsis
+				text-overflow: ellipsis
+			&-wrapper
+				background: #fff
+				border-radius: 3px
+				padding: 0 50px 0 0 
+		&__button
+			background: #ffc02a
 			border-radius: 3px
-			padding: 0 50px 0 0 
-	&__button
-		background: #ffc02a
-		border-radius: 3px
-		text-shadow: 0 1px 1px rgba(180, 137, 63, 0.75)
-		color: white
-		font-size: 20px
-		font-weight: 700
-		line-height: 1
-		width: 100%
-		padding: 9px 0 10px 
-		cursor: pointer
-		transition: background 0.2s
-		&:hover
-			background: darken(#ffc02a, 10%) 
-		&:active
-			background: darken(#ffc02a, 20%) 
-	&__icon
-		position: absolute
-		top: 50%
-		margin-top: -14px
-		&-ppls
-			right: 23px
-			+s(search-ppls)
-		&-place
-			right: 26px
-			+s(search-place)
+			text-shadow: 0 1px 1px rgba(180, 137, 63, 0.75)
+			color: white
+			font-size: 20px
+			font-weight: 700
+			line-height: 1
+			width: 100%
+			padding: 9px 0 10px 
+			cursor: pointer
+			transition: background 0.2s
+			&:hover
+				background: darken(#ffc02a, 10%) 
+			&:active
+				background: darken(#ffc02a, 20%) 
+		&__icon
+			position: absolute
+			top: 50%
+			margin-top: -14px
+			&-ppls
+				right: 23px
+				+s(search-ppls)
+			&-place
+				right: 26px
+				+s(search-place)
