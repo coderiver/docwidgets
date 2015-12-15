@@ -70,7 +70,7 @@ body { font-family: "PT Sans", Arial, sans-serif; font-size: 12px; line-height: 
 .doc-widget.doc-widget_small .doc-widget__address-mod { padding: 0; }
 .doc-widget.doc-widget_small .doc-widget__bottom { *zoom: 1; text-align: left; }
 .doc-widget.doc-widget_small .doc-widget__bottom:after { content: " "; display: table; clear: both; }
-.doc-widget.doc-widget_small .doc-widget__button { font-size: 17px; -webkit-border-radius: 4px; border-radius: 4px; padding: 10px 22px 11px; }
+.doc-widget.doc-widget_small .doc-widget__button { font-size: 17px; -webkit-border-radius: 4px; border-radius: 4px; padding: 10px 22px 11px; float: right; }
 .doc-widget.doc-widget_small .doc-schedule { font-size: 0; padding: 3px 0 0 24px; position: relative; float: left; }
 .doc-widget.doc-widget_small .doc-schedule:before { content: ""; position: absolute; top: 2px; left: 0; background-image: url("../img/icons.png"); width: 15px; height: 17px; background-position: -150px 0px; }
 .doc-widget.doc-widget_small .doc-schedule__box { padding-right: 25px; display: inline-block; vertical-align: top; font-size: 13px; line-height: 18px; padding-bottom: 10px; }
