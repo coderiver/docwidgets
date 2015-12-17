@@ -1,25 +1,4 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
-
-body, html { height: 100%; }
-
-img, fieldset, a img { border: none; }
-
-input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
-
-textarea { overflow: auto; }
-
-input, button { margin: 0; padding: 0; border: 0; }
-
-div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
-
-ul, ol { list-style-type: none; }
-table { border-spacing: 0; border-collapse: collapse; width: 100%; }
-
-html { -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-*, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
-
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -70,7 +49,7 @@ body { font-family: "PT Sans", Arial, sans-serif; font-size: 12px; line-height: 
 .doc-widget.doc-widget_small .doc-widget__address-mod { padding: 0; }
 .doc-widget.doc-widget_small .doc-widget__bottom { *zoom: 1; text-align: left; }
 .doc-widget.doc-widget_small .doc-widget__bottom:after { content: " "; display: table; clear: both; }
-.doc-widget.doc-widget_small .doc-widget__button { font-size: 17px; -webkit-border-radius: 4px; border-radius: 4px; padding: 10px 22px 11px; float: right; }
+.doc-widget.doc-widget_small .doc-widget__button { font-size: 17px; -webkit-border-radius: 4px; border-radius: 4px; padding: 10px 22px 11px; float: right; border: none; outline: none; }
 .doc-widget.doc-widget_small .doc-schedule { font-size: 0; padding: 3px 0 0 24px; position: relative; float: left; }
 .doc-widget.doc-widget_small .doc-schedule:before { content: ""; position: absolute; top: 2px; left: 0; background-image: url("../img/icons.png"); width: 15px; height: 17px; background-position: -150px 0px; }
 .doc-widget.doc-widget_small .doc-schedule__box { padding-right: 25px; display: inline-block; vertical-align: top; font-size: 13px; line-height: 18px; padding-bottom: 10px; }
@@ -163,7 +142,7 @@ body { font-family: "PT Sans", Arial, sans-serif; font-size: 12px; line-height: 
 .doc-widget .doc-widget__text { color: #5e6e71; font-size: 14px; line-height: 20px; margin-bottom: 8px; height: 80px; overflow: hidden; }
 .doc-widget .doc-widget__bottom { text-align: right; font-size: 0; padding: 8px 0 0; }
 .doc-widget .doc-widget__bottom-mod { padding: 6px 0 0; }
-.doc-widget .doc-widget__button { text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.23); color: white; font-size: 18px; font-weight: 700; line-height: 1; background: #35bfae; -webkit-border-radius: 3px; border-radius: 3px; padding: 13px 22px 14px 25px; display: inline-block; vertical-align: top; cursor: pointer; outline: none; -webkit-transition: background 0.2s; transition: background 0.2s; text-align: center; text-decoration: none; }
+.doc-widget .doc-widget__button { text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.23); color: white; font-size: 18px; font-weight: 700; line-height: 1; background: #35bfae; -webkit-border-radius: 3px; border-radius: 3px; padding: 13px 22px 14px 25px; display: inline-block; vertical-align: top; cursor: pointer; -webkit-transition: background 0.2s; transition: background 0.2s; text-align: center; text-decoration: none; border: none; outline: none; }
 .doc-widget .doc-widget__button:hover { background: #2a978a; }
 .doc-widget .doc-widget__button:active { background: #1f6f65; }
 .doc-widget .doc-widget__box { padding: 11px 16px 7px; background-color: white; border: 1px dashed #c0d2d6; -webkit-border-radius: 3px; border-radius: 3px; }
@@ -231,7 +210,7 @@ body { font-family: "PT Sans", Arial, sans-serif; font-size: 12px; line-height: 
 .doc-compact .doc-compact__stars { width: 79px; height: 18px; margin-left: 4px; }
 .doc-compact .doc-compact__stars-active div { background-image: url("../img/icons.png"); width: 79px; height: 18px; background-position: 0px -23px; }
 .doc-compact .doc-compact__bottom { clear: both; padding: 17px 0 0; }
-.doc-compact .doc-compact__button { text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.23); color: white; font-size: 15px; font-weight: 700; line-height: 1; background: #35bfae; -webkit-border-radius: 3px; border-radius: 3px; padding: 13px 20px 13px 20px; display: inline-block; vertical-align: top; cursor: pointer; outline: none; -webkit-transition: background 0.2s; transition: background 0.2s; text-align: center; text-decoration: none; width: 100%; }
+.doc-compact .doc-compact__button { text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.23); color: white; font-size: 15px; font-weight: 700; line-height: 1; background: #35bfae; -webkit-border-radius: 3px; border-radius: 3px; padding: 13px 20px 13px 20px; display: inline-block; vertical-align: top; cursor: pointer; -webkit-transition: background 0.2s; transition: background 0.2s; text-align: center; text-decoration: none; width: 100%; border: none; outline: none; }
 .doc-compact .doc-compact__button:hover { background: #2a978a; }
 .doc-compact .doc-compact__button:active { background: #1f6f65; }
 .doc-compact .doc-compact__comment { border-top: 1px dashed #c0d2d6; *zoom: 1; padding: 13px 18px 18px; }
@@ -286,7 +265,7 @@ body { font-family: "PT Sans", Arial, sans-serif; font-size: 12px; line-height: 
 .doc-teaser .doc-teaser__review-link { display: inline-block; vertical-align: top; color: #4b89d3; font-size: 13px; line-height: 15px; text-decoration: none; }
 .doc-teaser .doc-teaser__review-link:hover { text-decoration: underline; }
 .doc-teaser .doc-teaser__right { width: 251px; float: right; }
-.doc-teaser .doc-teaser__button { text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.23); color: white; font-size: 17px; font-weight: 700; line-height: 1; -webkit-border-radius: 2px; border-radius: 2px; background: #35bfae; padding: 18px 20px; display: inline-block; vertical-align: top; cursor: pointer; outline: none; -webkit-transition: background 0.2s; transition: background 0.2s; text-align: center; text-decoration: none; width: 100%; }
+.doc-teaser .doc-teaser__button { text-shadow: 0.5px 0.9px 0 rgba(48, 49, 49, 0.23); color: white; font-size: 17px; font-weight: 700; line-height: 1; -webkit-border-radius: 2px; border-radius: 2px; background: #35bfae; padding: 18px 20px; display: inline-block; vertical-align: top; cursor: pointer; -webkit-transition: background 0.2s; transition: background 0.2s; text-align: center; text-decoration: none; width: 100%; border: none; outline: none; }
 .doc-teaser .doc-teaser__button:hover { background: #2a978a; }
 .doc-teaser .doc-teaser__button:active { background: #1f6f65; }
 
@@ -316,20 +295,18 @@ body { font-family: "PT Sans", Arial, sans-serif; font-size: 12px; line-height: 
 .doc-search .doc-search__ppls { width: 51%; }
 .doc-search .doc-search__place { width: 49%; }
 .doc-search .doc-search__btn { position: absolute; top: 10px; right: 10px; width: 172px; }
-.doc-search .doc-search__input { width: 100%; font-family: "PT Sans", Arial, sans-serif; color: #91b5bc; font-size: 16px; background: white; -webkit-border-radius: 3px; border-radius: 3px; height: 39px; padding: 9px 0 10px 16px; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
+.doc-search .doc-search__input { width: 100%; font-family: "PT Sans", Arial, sans-serif; color: #91b5bc; font-size: 16px; background: white; -webkit-border-radius: 3px; border-radius: 3px; height: 39px; padding: 9px 0 10px 16px; -ms-text-overflow: ellipsis; text-overflow: ellipsis; border: none; outline: none; }
 .doc-search .doc-search__input::-webkit-input-placeholder { color: #91b5bc; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
 .doc-search .doc-search__input::-moz-placeholder { color: #91b5bc; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
 .doc-search .doc-search__input:-ms-input-placeholder { color: #91b5bc; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
 .doc-search .doc-search__input::placeholder { color: #91b5bc; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
 .doc-search .doc-search__input-wrapper { background: #fff; -webkit-border-radius: 3px; border-radius: 3px; padding: 0 50px 0 0; }
-.doc-search .doc-search__button { background: #ffc02a; -webkit-border-radius: 3px; border-radius: 3px; text-shadow: 0 1px 1px rgba(180, 137, 63, 0.75); color: white; font-size: 20px; font-weight: 700; line-height: 1; width: 100%; padding: 9px 0 10px; cursor: pointer; -webkit-transition: background 0.2s; transition: background 0.2s; }
+.doc-search .doc-search__button { background: #ffc02a; -webkit-border-radius: 3px; border-radius: 3px; text-shadow: 0 1px 1px rgba(180, 137, 63, 0.75); color: white; font-size: 20px; font-weight: 700; line-height: 1; width: 100%; padding: 9px 0 10px; cursor: pointer; -webkit-transition: background 0.2s; transition: background 0.2s; border: none; outline: none; }
 .doc-search .doc-search__button:hover { background: #f6ad00; }
 .doc-search .doc-search__button:active { background: #c38900; }
 .doc-search .doc-search__icon { position: absolute; top: 50%; margin-top: -14px; }
 .doc-search .doc-search__icon-ppls { right: 23px; background-image: url("../img/icons.png"); width: 24px; height: 27px; background-position: -122px 0px; }
 .doc-search .doc-search__icon-place { right: 26px; background-image: url("../img/icons.png"); width: 21px; height: 27px; background-position: -122px -31px; }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
- *{ -webkit-text-size-adjust: none; } }
 
 
 
